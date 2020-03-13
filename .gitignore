@@ -1,0 +1,9 @@
+codebook.aux
+codebook.log
+codebook.synctex.gz
+codebook.toc
+codebook.fdb_latexmk
+codebook.fls
+*.vscode
+*.exe
+*.DS_Store
