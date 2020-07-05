@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 const int INF = 1000000000;
 vector<vector<pair<int, int>>> adj;
 

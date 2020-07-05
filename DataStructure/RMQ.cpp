@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 typedef struct Node{
     int value;
     Node* lc;
@@ -54,41 +51,3 @@ void update(Node* T, int l, int r, int index, int val) {
 int main() {
     //query(root, a, b, 0, N - 1);
 }
-
-/*
-typedef struct node{
-  int val = 0;
-  node *l = nullptr;
-  node *r = nullptr;
-  node(int num) {
-    val = num;
-  }
-  void pull(void) {
-    if (l)
-      val = l -> val;
-    if (r)
-      val = max(val, r -> val);
-  }
-}node;
-
-node* build(int l, int r, vector<int> &vec, node* &root) {
-  if (l == r)
-    return new node(vec[l]);
-  root = new node(0);
-  int mid = (l + r) / 2;
-  root -> l = build(l, mid, vec, root -> l);
-  root -> r = build(mid + 1, r, vec, root -> r);
-  root -> pull();
-}
-
-int query(int ql, int qr, int l, int r, node* root) {
-  if (ql <= l && qr >= r) 
-    return root -> val;
-  int mid = (l + r) / 2;
-  if (ql > mid)
-    return query(ql, qr, mid + 1, r, root -> r);
-  if (qr <= mid)
-    return query(ql, qr, l, mid, root -> l);
-  return max(query(ql, mid, l, mid, root -> l), query(mid + 1, qr, mid + 1, r, root -> r));
-}
-*/

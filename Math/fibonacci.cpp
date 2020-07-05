@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 //return Fn, F(n + 1)
 pair<int, int> fib (int n) {
     if (n == 0)

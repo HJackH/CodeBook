@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 int x, y;
 int g = extended_euclidean(a, m, x, y);
 if (g != 1) {
