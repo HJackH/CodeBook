@@ -21,14 +21,17 @@ void buildTree(Node* &T, int l, int r) {
 }
 
 int query(Node* T, int ql, int qr, int l, int r) {
-    if (ql <= l && r <= qr) {   //at the location we want
+    if (ql <= l && r <= qr) {   
+        //at the location we want
         return T -> value;
     }
     int mid = (l + r) / 2;
-    if (qr <= mid) {            //all we want at the left child
+    if (qr <= mid) {            
+        //all we want at the left child
         return query(T -> lc, ql, qr, l, mid);
     }             
-    if (ql > mid) {             // all we want at the right child
+    if (ql > mid) {             
+        // all we want at the right child
         return query(T -> rc, ql, qr, mid + 1, r);
     }
     return max(query(T -> lc, ql, mid, l, mid), query(T -> rc, mid + 1, qr, mid + 1, r));
