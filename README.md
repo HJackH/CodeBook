@@ -7,4 +7,7 @@
     2. Default
 2. **Data Structure**
     1. Disjoint Set
-        - [x] tested with `UVa10608`
+        - [x] *Passed* --- `UVa10608`
+3. **Graph**
+    1. Dijkstra
+        - [x] *Passed* --- `UVa10986`
