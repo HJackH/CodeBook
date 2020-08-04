@@ -1,6 +1,8 @@
 # CodeBook
 > some algorithms and data structures
 
+[![Build Status](https://travis-ci.org/HJackH/CodeBook.svg?branch=master)](https://travis-ci.org/HJackH/CodeBook)
+
 ## Contents
 1. **Basic**
     1. Run
