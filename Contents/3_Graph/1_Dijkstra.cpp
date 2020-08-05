@@ -1,5 +1,5 @@
 const long long INF = 1e18;
-const int MAXN = 1000;
+const int MAXN = ;
 struct Edge {
     int at;
     long long cost;
@@ -18,14 +18,10 @@ void init() {
         dis[i] = INF;
     }
 }
-void addEdge(int u, int v, long long cost) {
-    G[u].push_back({v, cost});
-    G[v].push_back({u, cost});
-}
 void Dijkstra(int st, int ed = -1) {
-    dis[st] = 0;
     priority_queue<Edge> pq;
     pq.push({st, 0});
+    dis[st] = 0;
     while (!pq.empty()) {
         auto now = pq.top();
         pq.pop();

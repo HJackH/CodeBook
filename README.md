@@ -9,7 +9,9 @@
     2. Default
 2. **Data Structure**
     1. Disjoint Set
-        - [x] *Passed* --- `UVa10608`
+        - [x] *Tested* --- `UVa10608`
 3. **Graph**
     1. Dijkstra
-        - [x] *Passed* --- `UVa10986`
+        - [x] *Tested* --- `UVa10986`
+    2. SPFA
+        - [x] *Tested* --- `UVa558`
