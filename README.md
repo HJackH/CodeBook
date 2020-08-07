@@ -15,3 +15,6 @@
         - [x] *Tested* --- `UVa10986`
     2. SPFA
         - [x] *Tested* --- `UVa558`
+4. **String**
+    1. Manacher
+        - [x] *Tested* --- `POJ3974`
