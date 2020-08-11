@@ -18,3 +18,6 @@
 4. **String**
     1. Manacher
         - [x] *Tested* --- `POJ3974`
+5. **DP**
+    1. LIS
+        - [x] *Tested* --- `UVa481`
