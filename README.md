@@ -15,9 +15,12 @@
         - [x] *Tested* --- `UVa10986`
     2. SPFA
         - [x] *Tested* --- `UVa558`
-4. **String**
+4. **Flow & Matching**
+    1. KM
+        - [x] *Tested* --- `POJ2195`
+5. **String**
     1. Manacher
         - [x] *Tested* --- `POJ3974`
-5. **DP**
+6. **DP**
     1. LIS
         - [x] *Tested* --- `UVa481`
