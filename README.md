@@ -7,6 +7,7 @@
 1. **Basic**
     1. Run
     2. Default
+    3. Black Magic
 2. **Data Structure**
     1. Disjoint Set
         - [x] *Tested* --- `UVa10608`
