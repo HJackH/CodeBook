@@ -20,7 +20,7 @@ void init() {
 }
 void Dijkstra(int st, int ed = -1) {
   priority_queue<Edge> pq;
-  pq.push({st, 0});
+  pq.push({ st, 0 });
   dis[st] = 0;
   while (!pq.empty()) {
     auto now = pq.top();
@@ -34,7 +34,7 @@ void Dijkstra(int st, int ed = -1) {
     for (auto &e : G[now.at]) {
       if (dis[e.at] > now.cost + e.cost) {
         dis[e.at] = now.cost + e.cost;
-        pq.push({e.at, dis[e.at]});
+        pq.push({ e.at, dis[e.at] });
       }
     }
   }

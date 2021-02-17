@@ -4,8 +4,8 @@ int LIS(vector<int> &a) {
     if (s.empty() || s.back() < a[i]) {
       s.push_back(a[i]);
     } else {
-      *lower_bound(s.begin(), s.end(), a[i], 
-          [](int x, int y){return x < y;}) = a[i];
+      *lower_bound(s.begin(), s.end(), a[i],
+        [](int x, int y) {return x < y;}) = a[i];
     }
   }
   return s.size();

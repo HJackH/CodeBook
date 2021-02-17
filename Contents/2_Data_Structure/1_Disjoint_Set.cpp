@@ -11,11 +11,11 @@ int find(int x) {
   }
   return boss[x] = find(boss[x]);
 }
-bool merge(int a, int b) {
+bool uni(int a, int b) {
   a = find(a);
   b = find(b);
   if (a == b) {
-      return false;
+    return false;
   }
   if (boss[a] > boss[b]) {
     swap(a, b);

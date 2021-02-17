@@ -10,5 +10,5 @@ const double EPS = 1e-6;
 const int MAXN = 0;
 
 int main() {
-    
+
 }
