@@ -11,6 +11,8 @@
 2. **Data Structure**
     1. Disjoint Set
         - [x] *Tested* --- `UVa10608`
+    2. BIT RURQ
+        - [x] *Tested* --- `LOJ132`
 3. **Graph**
     1. Dijkstra
         - [x] *Tested* --- `UVa10986`
