@@ -27,3 +27,6 @@
 6. **DP**
     1. LIS
         - [x] *Tested* --- `UVa481`
+7. **Math**
+    1. Extended GCD
+        - [x] *Tested* --- `Uva10104`
