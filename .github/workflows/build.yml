@@ -61,6 +61,7 @@ jobs:
           git config --local user.email ${{ secrets.GH_EMAIL }}
           git config --local user.name ${{ github.repository_owner }}
           git add codebook.pdf
+          timedatectl set-timezone "Asia/Taipei"
           git commit -m "Built on: `date +'%Y-%m-%d-%T'`"
 
       - name: Push codebook
