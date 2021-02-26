@@ -32,7 +32,7 @@ jobs:
       - name: Check codebook.pdf exists
         run: |
           git checkout gh-pages
-          
+
           if [[ -f codebook.pdf ]]; then
             rm codebook.pdf
           fi
@@ -40,7 +40,8 @@ jobs:
           git checkout master
         
       - name: Build codebook
-        run: docker run --rm -v $(pwd):/storage ghcr.io/hjackh/codebook-builder \
+        run: |
+          docker run --rm -v $(pwd):/storage ghcr.io/hjackh/codebook-builder \
           /bin/sh -c "texliveonfly codebook.tex --compiler=xelatex ; latexmk -pdfxe codebook.tex"
 
       - name: Move codebook.pdf
@@ -49,7 +50,6 @@ jobs:
           mv codebook.pdf tmp
           git checkout gh-pages
           mv tmp/codebook.pdf ./
-          # rm -r tmp
 
       - name: Commit
         run: |

@@ -1,7 +1,7 @@
 # CodeBook
 > some algorithms and data structures
 
-[![Build Status](https://travis-ci.org/HJackH/CodeBook.svg?branch=master)](https://travis-ci.org/HJackH/CodeBook)
+[![codebook](https://github.com/HJackH/CodeBook/actions/workflows/build.yml/badge.svg)](https://github.com/HJackH/CodeBook/actions/workflows/build.yml)
 
 ## Contents
 1. **Basic**
