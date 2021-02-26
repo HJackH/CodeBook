@@ -3,6 +3,8 @@
 
 [![codebook](https://github.com/HJackH/CodeBook/actions/workflows/build.yml/badge.svg)](https://github.com/HJackH/CodeBook/actions/workflows/build.yml)
 
+[codebook.pdf](https://hjackh.github.io/CodeBook)
+
 ## Contents
 1. **Basic**
     1. Run
