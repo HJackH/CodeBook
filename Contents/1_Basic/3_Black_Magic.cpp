@@ -20,7 +20,7 @@ int main() {
   st.insert(5); st.insert(6);
   st.insert(3); st.insert(1);
 
-  // the smallest is (0), bigest is (n-1), kth small is (k-1)
+  // the smallest is (0), biggest is (n-1), kth small is (k-1)
   int num = *st.find_by_order(0);
   cout << num << '\n'; // print 1
 
@@ -31,11 +31,11 @@ int main() {
   int index = st.order_of_key(6);
   cout << index << '\n'; // print 3
 
-  // cheak if there exist x
+  // check if there exists x
   int x = 5;
   int check = st.erase(x);
   if (check == 0) printf("st not contain 5\n");
-  else if (check == 1) printf("st conain 5\n");
+  else if (check == 1) printf("st contain 5\n");
 
   //tree policy like set
   st.insert(5); st.insert(5);
