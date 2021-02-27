@@ -1,3 +1,4 @@
+// 0-base
 const int MAXN = 1000;
 int boss[MAXN];
 void init(int n) {

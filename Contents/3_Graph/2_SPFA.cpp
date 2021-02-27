@@ -1,3 +1,4 @@
+// 0-base
 const long long INF = 1e18;
 const int MAXN = ;
 struct Edge {
