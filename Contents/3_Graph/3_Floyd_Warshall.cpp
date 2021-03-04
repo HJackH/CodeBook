@@ -1,4 +1,5 @@
 // 0-base
+// G[i][i] < 0 -> negative cycle
 const LL INF = 1e18;
 const int MAXN = ;
 

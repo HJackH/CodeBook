@@ -20,14 +20,14 @@ void update(int id, int val) {
   }
 }
 int query(int l, int r) { // [l, r)
-  int res = -INF;
+  int ret = -INF;
   for (l += n, r += n; l < r; l >>= 1, r >>= 1) {
     if (l & 1) {
-      res = max(res, tr[l++]);
+      ret = max(ret, tr[l++]);
     }
     if (r & 1) {
-      res = max(res, tr[--r]);
+      ret = max(ret, tr[--r]);
     }
   }
-  return res;
+  return ret;
 }
