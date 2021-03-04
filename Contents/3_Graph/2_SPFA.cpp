@@ -1,13 +1,13 @@
 // 0-base
-const long long INF = 1e18;
+const LL INF = 1e18;
 const int MAXN = ;
 struct Edge {
   int at;
-  long long cost;
+  LL cost;
 };
 
 int n;
-long long dis[MAXN];
+LL dis[MAXN];
 vector<Edge> G[MAXN];
 
 void init() {

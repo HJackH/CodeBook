@@ -10,7 +10,7 @@ void build() {
   for (int i = 0; i < n; i++) {
     tr[i + n] = a[i];
   }
-  for (int i = n - 1; i > 0; --i) {
+  for (int i = n - 1; i > 0; i--) {
     tr[i] = max(tr[i << 1], tr[i << 1 | 1]);
   }
 }
