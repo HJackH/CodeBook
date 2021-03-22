@@ -68,11 +68,7 @@ struct Dinic {
     LL ret = 0;
     while (bfs(st, ed)) {
       fill(now, now + n + 1, 0);
-      LL tmp;
-      do {
-        tmp = dfs(st, ed, INF);
-        ret += tmp;
-      } while (tmp);
+      ret += dfs(st, ed, INF);
     }
     return ret;
   }
