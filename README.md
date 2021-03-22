@@ -29,6 +29,8 @@
 4. **Flow & Matching**
     1. KM
         - [x] *Tested* --- `POJ2195`
+    2. Dinic
+        - [x] *Tested* --- `Aizu-GRL_6_A`
 5. **String**
     1. Manacher
         - [x] *Tested* --- `POJ3974`
