@@ -21,7 +21,7 @@ void init() {
 }
 void Dijkstra(int st, int ed = -1) {
   priority_queue<Edge> pq;
-  pq.push({ st, 0 });
+  pq.push({st, 0});
   dis[st] = 0;
   while (!pq.empty()) {
     auto now = pq.top();
