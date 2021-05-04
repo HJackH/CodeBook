@@ -28,6 +28,8 @@
         - [x] *Tested* --- `Aizu-GRL_4_B`
     5. Kosaraju
         - [x] *Tested* --- `Aizu-GRL_3_C`
+    6. Tree Diameter
+        - [x] *Tested* --- `Aizu-GRL_5_A`
 4. **Flow & Matching**
     1. KM
         - [x] *Tested* --- `POJ2195`
