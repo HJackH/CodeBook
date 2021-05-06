@@ -2,7 +2,7 @@
 const LL INF = 1e18;
 const int MAXN = ;
 struct Edge {
-  int at;
+  int to;
   LL cost;
 };
 
@@ -29,16 +29,16 @@ bool SPFA(int st) {
     q.pop();
     inq[now] = false;
     for (auto &e : G[now]) {
-      if (dis[e.at] > dis[now] + e.cost) {
-        dis[e.at] = dis[now] + e.cost;
-        if (!inq[e.at]) {
-          cnt[e.at]++;
-          if (cnt[e.at] > n) {
+      if (dis[e.to] > dis[now] + e.cost) {
+        dis[e.to] = dis[now] + e.cost;
+        if (!inq[e.to]) {
+          cnt[e.to]++;
+          if (cnt[e.to] > n) {
             // negative cycle
             return false;
           }
-          inq[e.at] = true;
-          q.push(e.at);
+          inq[e.to] = true;
+          q.push(e.to);
         }
       }
     }

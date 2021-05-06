@@ -2,7 +2,7 @@
 const LL INF = 1e18;
 const int MAXN = ;
 struct Edge {
-  int at;
+  int to;
   LL cost;
   bool operator < (const Edge &other) const {
     return cost > other.cost;
@@ -26,16 +26,16 @@ void Dijkstra(int st, int ed = -1) {
   while (!pq.empty()) {
     auto now = pq.top();
     pq.pop();
-    if (now.at == ed) {
+    if (now.to == ed) {
       return;
     }
-    if (now.cost > dis[now.at]) {
+    if (now.cost > dis[now.to]) {
       continue;
     }
-    for (auto &e : G[now.at]) {
-      if (dis[e.at] > now.cost + e.cost) {
-        dis[e.at] = now.cost + e.cost;
-        pq.push({ e.at, dis[e.at] });
+    for (auto &e : G[now.to]) {
+      if (dis[e.to] > now.cost + e.cost) {
+        dis[e.to] = now.cost + e.cost;
+        pq.push({ e.to, dis[e.to] });
       }
     }
   }
