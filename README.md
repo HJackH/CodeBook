@@ -43,6 +43,8 @@
 6. **DP**
     1. LIS
         - [x] *Tested* --- `UVa481`
+    2. LCS
+        - [x] *Tested* --- `Aizu-ALDS1_10_C`
 7. **Math**
     1. Extended GCD
         - [x] *Tested* --- `Uva10104`
