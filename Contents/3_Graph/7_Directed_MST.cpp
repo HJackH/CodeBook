@@ -6,6 +6,7 @@ struct Edge {
   int from;
   int to;
   LL cost;
+  Edge(int u, int v, LL c) : from(u), to(v), cost(c) {}
 };
 
 struct DMST {
@@ -18,7 +19,7 @@ struct DMST {
     edges.clear();
   }
   void add_edge(int from, int to, LL cost) {
-    edges.push_back({from, to, cost});
+    edges.eb(from, to, cost);
   }
   LL run(int root) {
     LL ret = 0;

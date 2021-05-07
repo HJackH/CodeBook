@@ -4,6 +4,7 @@ const int MAXN = ;
 struct Edge {
   int to;
   int cost;
+  Edge(int v, int c) : to(v), cost(c) {}
 };
 
 int n, d = 0;

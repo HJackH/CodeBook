@@ -4,6 +4,7 @@ const int MAXN = ;
 struct Edge {
   int to;
   LL cost;
+  Edge(int v, LL c) : to(v), cost(c) {}
   bool operator < (const Edge &other) const {
     return cost > other.cost;
   }
@@ -21,7 +22,7 @@ void init() {
 }
 void Dijkstra(int st, int ed = -1) {
   priority_queue<Edge> pq;
-  pq.push({st, 0});
+  pq.emplace(st, 0);
   dis[st] = 0;
   while (!pq.empty()) {
     auto now = pq.top();
@@ -35,7 +36,7 @@ void Dijkstra(int st, int ed = -1) {
     for (auto &e : G[now.to]) {
       if (dis[e.to] > now.cost + e.cost) {
         dis[e.to] = now.cost + e.cost;
-        pq.push({ e.to, dis[e.to] });
+        pq.emplace(e.to, dis[e.to]);
       }
     }
   }
