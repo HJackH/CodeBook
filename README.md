@@ -37,6 +37,8 @@
         - [x] *Tested* --- `POJ2195`
     2. Dinic
         - [x] *Tested* --- `Aizu-GRL_6_A`
+    3. MCMF
+        - [x] *Tested* --- `Aizu-GRL_6_B`
 5. **String**
     1. Manacher
         - [x] *Tested* --- `POJ3974`
