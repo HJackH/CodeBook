@@ -5,9 +5,7 @@ int extgcd(int a, int b, int c, int &x, int &y) {
     y = 0;
     return a;
   }
-  int d = extgcd(b, a % b, c, x, y);
-  int tmp = x;
-  x = y;
-  y = tmp - (a / b) * y;
+  int d = extgcd(b, a % b, c, y, x);
+  y -= (a / b) * x;
   return d;
 }
